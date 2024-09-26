@@ -11,7 +11,7 @@ const createTask = async (req, res) => {
         res.status(201).json({task})
 
     }catch (error){
-        res.status(400).json({error})
+        res.status(500).json({msg:error})
     }
 }
 
