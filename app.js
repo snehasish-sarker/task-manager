@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const taskRouter = require('./routes/tasks')
 const connectDb = require('./db/connection')
-const notFound = require('./not-found/not-found')
+const notFound = require('./middleware/not-found')
 require('dotenv').config()
 
 app.use(express.json())
