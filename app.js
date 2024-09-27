@@ -6,10 +6,6 @@ require('dotenv').config()
 
 app.use(express.json())
 
-app.get('/', (req, res)=>{
-    res.send('HELLO WORLD')
-})
-
 app.use('/api/v1/tasks', taskRouter)
 
 const port = 3000;
